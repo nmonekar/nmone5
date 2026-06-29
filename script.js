@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mainHeader) {
             if (window.scrollY > 60) {
                 mainHeader.style.padding = '2px 0';
-                mainHeader.style.background = 'rgba(255, 253, 249, 0.98)';
+                mainHeader.style.background = 'rgba(196, 139, 159, 0.05)';
                 mainHeader.style.boxShadow = '0 10px 30px rgba(196, 139, 159, 0.05)';
             } else {
                 mainHeader.style.padding = '';
@@ -187,3 +187,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+const luxuryScroll = document.getElementById("luxuryScroll");
+
+if (luxuryScroll) {
+
+    luxuryScroll.addEventListener("click", () => {
+
+        const nextSection = document.querySelector("#services");
+
+        if (nextSection) {
+            nextSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+    });
+
+}
+const certificateImg = document.getElementById("certificateImg");
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.querySelector(".close-modal");
+
+certificateImg.onclick = () => {
+    imageModal.classList.add("active");
+    modalImage.src = certificateImg.src;
+}
+
+closeModal.onclick = () => {
+    imageModal.classList.remove("active");
+}
+
+imageModal.onclick = (e) => {
+    if (e.target === imageModal) {
+        imageModal.classList.remove("active");
+    }
+}
