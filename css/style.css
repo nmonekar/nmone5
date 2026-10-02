@@ -1,0 +1,727 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+body {
+  font-family: "vazir", "Arial Narrow", Arial, sans-serif;
+  background-color: #000000;
+}
+a,
+button {
+  text-decoration: none;
+  font-family: "vazir", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+}
+
+
+/* ==================header================== */
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+.header {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.header h3 {
+  color: #ffffff;
+}
+.header span {
+  color: red;
+}
+.header .nav {
+  display: flex;
+  gap: 25px;
+}
+.header .nav a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.header .nav a:hover {
+  color: #fe8f8f;
+}
+.btn-header {
+  width: 90px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.727);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+
+/* ===================hero================= */
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 7, 12, 0.96) 0%,
+      rgba(5, 7, 12, 0.82) 20%,
+      rgba(5, 7, 12, 0.42) 42%,
+      rgba(5, 7, 12, 0.05) 68%,
+      rgba(5, 7, 12, 0.1) 100%
+    ),
+    url("../assets/ChatGPT\ Image\ ۲۳\ شهریور\ ۱۴۰۵،\ ۰۶_۵۷_۱۷.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    transparent 30%,
+    transparent 70%,
+    rgba(0, 0, 0, 0.35)
+  );
+  z-index: -1;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 40, 20, 0.14),
+    rgba(255, 40, 20, 0.04) 40%,
+    transparent 72%
+  );
+  filter: blur(25px);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero-content {
+  position: relative;
+  width: min(1400px, 90%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 2;
+}
+.hero-text {
+  width: 47%;
+  max-width: 620px;
+  position: relative;
+  z-index: 5;
+  padding: 40px 0;
+  text-align: center;
+}
+.hero-text h1 {
+ font-size: clamp(66px, 4.5vw, 70px);
+  margin: 0 0 22px;
+ 
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
+.hero-text span {
+  color: red;
+}
+.hero-text p {
+  margin: 0 0 32px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.8);
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.hero-button-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  background-color: #ab0e0e4d;
+  border: 2px solid #ab0e0e;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.hero-button-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #ab0e0e;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.hero-button-2:hover,
+.hero-button-1:hover {
+  transform: translateY(-5px);
+  background-color: #ab0e0e;
+}
+
+.car-border{
+ 
+  width: 40%;
+  
+}
+.car-border {
+    display: block;
+    will-change: transform;
+}
+/* ===============mostatil============== */
+
+
+.mostatil {
+  display: flex;
+  gap: 10rem;
+  position: relative;
+  top: -30px;
+  border-radius: 30px;
+  z-index: 5555;
+  background-color: rgb(41, 0, 0);
+  padding: 30px;
+  margin: 0 150px 0 150px;
+  box-shadow: 0 1px 5px #ff0000b9;
+  align-items: center;
+    justify-content: space-between;
+    gap: clamp(15px, 4vw, 80px);
+
+    margin: 0 auto;
+    width: min(90%, 1200px);
+    box-sizing: border-box;
+}
+.mostatil p {
+  color: #ffffff;
+}
+.mostatil button {
+  background-color: #ab0e0e;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-weight: 800;
+}
+.bmw,
+.benz,
+.lamborghini,
+.toyota {
+    display: flex;
+    align-items: center;
+    gap: clamp(5px, 1vw, 10px);
+    direction: ltr;
+}
+
+.bmw img,
+.benz img,
+.lamborghini img,
+.toyota img {
+    width: clamp(30px, 4vw, 50px);
+    height: clamp(30px, 4vw, 50px);
+    object-fit: contain;
+}
+
+.mostatil p {
+    font-size: clamp(11px, 1.3vw, 16px);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.mostatil button {
+    font-size: clamp(11px, 1.3vw, 15px);
+    padding: clamp(7px, 1vw, 10px) clamp(12px, 2vw, 20px);
+    white-space: nowrap;
+}
+
+/* ================car=============== */
+.card-cars {
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.card-car {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #e1070075;
+    background-color: rgba(18, 0, 0, 0.829);
+    border: 3px solid #ab0e0e7c;
+    transition: 0.3s ease;
+}
+
+.card-car > img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 10px #ab0e0e31;
+}
+
+.card-car > div {
+    padding: 20px;
+}
+
+.card-car > div > img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    box-shadow: none;
+}
+
+.card-car h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.card-car p {
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 15px 0 0;
+}
+
+.card-car:hover {
+    transform: translateY(-5px) scale(1.02);
+    filter: brightness(1.08);
+    box-shadow: 0 0 15px #e10700f1;
+}
+
+/* ===============about-we============== */
+
+.about-we {
+  margin: 100px 0;
+  display: flex;
+  margin: 0 150px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.about-we-1 {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: 0px 50px;
+  padding: 30px;
+  position: relative;
+  background: rgba(10, 10, 10, 0.45);
+  border: 3px solid rgba(211, 19, 19, 0.469);
+  border-radius: 28px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(171, 14, 14, 0.12);
+  overflow: hidden;
+}
+.about-we-1 h3 {
+  color: #ffffff;
+}
+.about-we-1 p {
+  color: #dbdbdb;
+}
+.about-we-2 {
+  width: 50%;
+}
+.about-we-2 img {
+  width: 600px;
+}
+.about {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+.about-we-3 {
+  width: 100px;
+  height: 3px;
+  background-color: #ab0e0e;
+  border: #ab0e0e;
+}
+/* نور پشت کارت */
+.about-we-1::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -100px;
+  right: -80px;
+  background: #d31313;
+  opacity: 0.2;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.about-we-1::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  bottom: -80px;
+  left: -60px;
+  background: #ab0e0e;
+  opacity: 0.12;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+
+/* ===============why-us============== */
+
+
+.why-us {
+  margin: 10px 0;
+  width: 100%;
+  padding: 120px 20px;
+  background: #050505;
+  color: #fff;
+  overflow: hidden;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.why-header span {
+  display: block;
+  color: #d31313;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.why-header h2 {
+  margin: 0 0 15px;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.why-header p {
+  margin: 0;
+  color: #999;
+  font-size: 15px;
+}
+
+.timeline {
+  position: relative;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* خط وسط */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #d31313 10%,
+    #d31313 90%,
+    transparent
+  );
+  transform: translateX(-50%);
+}
+
+/* هر آیتم */
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+/* نقطه */
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #d31313;
+  border: 3px solid #050505;
+  box-shadow: 0 0 0 2px #d31313;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* کارت */
+
+.timeline-content {
+  position: relative;
+  width: 42%;
+  padding: 25px 28px;
+  background: #0d0d0d;
+  border: 1px solid #242424;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: #d31313;
+  transform: translateY(-5px);
+}
+
+.timeline-content span {
+  color: #d31313;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #999;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* ===============comment============== */
+
+.comment .comment-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.comment .comment-man {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.comment .comment-man .comment-section {
+ background-color: #0d0d0d;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px #ff0000;
+  margin: 10px;
+  width: 380px;
+  color: #f7f6f5e0;
+}
+.comment .comment-man .comment-section .comment-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #030303;
+  outline: 2px solid #be0000;
+  box-shadow: 0 4px 12px rgba(63, 11, 11, 0.3);
+}
+
+/* ===============footer============== */
+
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+.car-footer {
+  width: 100%;
+  background: #080808;
+  color: #fff;
+  border-top: 3px solid #d31313;
+  margin-top: 80px;
+  font-family: sans-serif;
+}
+
+/* بخش اصلی */
+
+.footer-top {
+  max-width: 1200px;
+  margin: auto;
+  padding: 65px 30px 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 50px;
+}
+
+/* برند */
+
+.footer-brand h2 {
+  font-size: 30px;
+  margin: 0 0 18px;
+  letter-spacing: 2px;
+}
+
+.footer-brand h2 span {
+  color: #d31313;
+}
+
+.footer-brand p {
+  color: #aaa;
+  line-height: 1.9;
+  max-width: 300px;
+  margin-bottom: 25px;
+}
+
+/* شبکه های اجتماعی */
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #333;
+  color: #fff;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #d31313;
+  border-color: #d31313;
+  transform: translateY(-3px);
+}
+
+/* ستون ها */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin: 0 0 12px;
+
+  position: relative;
+  padding-right: 12px;
+}
+
+.footer-column h3::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 3px;
+  height: 18px;
+  background: #d31313;
+}
+
+.footer-column a,
+.footer-column p {
+  color: #999;
+  text-decoration: none;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  padding-right: 5px;
+}
+
+/* پایین فوتر */
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  border-top: 1px solid #222;
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-bottom-links a:hover {
+  color: #d31313;
+}
+
+/*رنگ های سایت  
+#AB0E0E
+#D31313
+#FFF5F5
+#1F0D0F 
+*/

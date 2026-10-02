@@ -1,0 +1,318 @@
+*{
+ 
+    /* outline: 1px solid red; */
+  }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 0;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+    display: block;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+@media screen and (max-width: 580px) {
+  .header {
+  padding: 0 25px ;
+}
+nav a{
+  display: none;
+}
+/* ===============hero============== */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 7, 12, 0.745) 100%,
+      rgb(5, 7, 12) 100%,
+      rgba(5, 7, 12, 0.42) 100%,
+      rgba(5, 7, 12, 0.05) 100%,
+      rgba(5, 7, 12, 0.1) 100%
+    ),
+    url("../assets/ChatGPT\ Image\ ۸\ مهر\ ۱۴۰۵،\ ۱۳_۳۹_۵۰.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  
+}
+
+.hero-text { 
+  width: 100%;
+}
+.hero-text h1 {
+  margin: 0 0 22px;
+   font-size: clamp(50px, 4.5vw, 60px);
+  line-height: 1.3;
+ } 
+.hero-text p {
+  margin: 0;
+
+}
+.hero-button-1 {
+  padding: 0 60px;
+}
+.hero-button-2 {
+  display: none;
+}
+
+/* ===============mostatil============== */
+.car-border{
+ 
+  width: 60%;
+  
+}
+
+.mostatil {
+  display: none;
+}
+
+/* ================car=============== */
+
+    .card-cars {
+        margin: 30px 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card-car {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .card-car > img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .card-car > div {
+        padding: 18px;
+    }
+
+    .card-car > div > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-car h2 {
+        font-size: 17px;
+    }
+
+    .card-car p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .card-car:hover {
+        transform: translateY(-3px);
+    }
+
+
+/* ===============about-we============== */
+
+.about-we {
+  display: inline;
+}
+.about-we-1 {
+  width: 88%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-we-2 {
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* ===============why-us============== */
+
+.why-us {
+  margin: 0;
+  
+}
+.why-header {
+  margin-bottom: 80px;
+}
+
+/* خط وسط */
+.timeline::before {
+  left: 100%;
+}
+/* نقطه */
+.timeline-dot {
+  left: 100%;
+}
+/* کارت */
+.timeline-content {
+  width: 90%;
+  margin: 15px;
+  margin-right: 33px;
+}
+
+/* ===============comment============== */
+
+.comment .comment-text {
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+.comment .comment-man {
+  display: block;
+  padding: 0;
+}
+.comment .comment-man .comment-section {
+  margin: 35px auto;
+  width: 90%;
+}
+
+/* ===============footer============== */
+
+    .car-footer {
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        padding: 45px 22px 25px;
+        text-align: center;
+    }
+
+    /* برند */
+
+    .footer-brand {
+        padding-bottom: 35px;
+    }
+
+    .footer-brand h2 {
+        font-size: 32px;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+    }
+
+    .footer-brand p {
+        max-width: 330px;
+        margin: 0 auto;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    /* شبکه اجتماعی */
+
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .social-links a {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        font-size: 11px;
+    }
+
+    /* ستون‌ها */
+
+    .footer-column {
+        width: 100%;
+        box-sizing: border-box;
+
+        align-items: center;
+        gap: 12px;
+
+        padding: 22px 5px;
+
+        border-top: 1px solid #202020;
+    }
+
+    .footer-column h3 {
+        width: 100%;
+        margin: 0 0 5px;
+        padding: 0;
+
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer-column h3::before {
+        display: none;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    .footer-column a:hover {
+        padding-right: 0;
+        transform: translateY(-2px);
+    }
+
+    /* ارتباط با ما */
+
+    .contact-column {
+        padding-bottom: 25px;
+    }
+
+    /* پایین فوتر */
+
+    .footer-bottom {
+        padding: 22px 20px;
+
+        flex-direction: column;
+        gap: 14px;
+
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .footer-bottom-links {
+        gap: 22px;
+    }
+
+    .footer-bottom-links a {
+        font-size: 11px;
+    }
+}
